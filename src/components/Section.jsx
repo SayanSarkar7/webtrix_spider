@@ -5,14 +5,11 @@ const Section = ({
   h3,
   text,
   hasBtn = true,
-  btnTxt,
   imgSrc,
   imgSize = "70%",
   backgroundColor,
   headingColor,
   textColor,
-  btnBgColor,
-  btnColor,
 }) => {
   const headingOptions = {
     initial: {
@@ -87,18 +84,18 @@ const Section = ({
           {text}
         </motion.p>
 
-        {hasBtn && (
-          <motion.button
-            style={{
-              color: btnColor,
-              backgroundColor: btnBgColor,
-            }}
-            data-cursorpointer={true}
-            {...buttonOptions}
-          >
-            {btnTxt}
-          </motion.button>
-        )}
+        {/* {hasBtn && (
+          // <motion.button
+          //   style={{
+          //     color: btnColor,
+          //     backgroundColor: btnBgColor,
+          //   }}
+          //   data-cursorpointer={true}
+          //   {...buttonOptions}
+          // >
+          //   {btnTxt}
+          // </motion.button>
+        )} */}
 
         <motion.div {...imgOptions}>
           <img

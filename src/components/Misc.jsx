@@ -9,11 +9,11 @@ const Misc = () => {
       <a href="/" className="logo">
         <img src={logo} alt="Logo" data-cursorpointer={true} />
       </a>
-      <a href="/franchise" className="franchiseBtn" data-cursorpointer={true}>
+      {/* <a href="/franchise" className="franchiseBtn" data-cursorpointer={true}>
         GET A FRANCHISE
-      </a>
+      </a> */}
 
-      <BsMouse className="scrollBtn" data-cursorpointer={true} />
+      {/* <BsMouse className="scrollBtn" data-cursorpointer={true} /> */}
     </>
   );
 };

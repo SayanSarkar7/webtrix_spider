@@ -1,0 +1,166 @@
+@import "./colors.scss";
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+
+  > main {
+    color: yellow;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // border: 1px solid wheat;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding: 2rem;
+    > h1 {
+      font: 400 6rem $text;
+    }
+    > p {
+      font: 900 1rem $text;
+    }
+  }
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: no-repeat center/auto url("../assets/academy.png");
+    filter: blur(3px);
+    border-radius: 0 0 200px 200px;
+  }
+}
+
+.home2 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  // border: 1px solid wheat;
+  padding: 500px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -200px;
+
+  > img {
+    width: 30%;
+    // border: 1px solid green;
+    animation: imgUp 0.7s linear infinite alternate;
+  }
+  > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    // border: 2px solid wheat;
+    height: 100vh;
+
+    p {
+      color: yellow;
+      letter-spacing: 2px;
+      word-spacing: 5px;
+      font: 100 1.2rem $text;
+    }
+  }
+}
+
+@keyframes imgUp {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.home3 {
+  width: 100%;
+  height: 120vh;
+  background-color: black;
+  margin-top: -200px;
+  display: flex;
+  > div {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    border-radius: 0 200px 200px 0;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    > h1 {
+      text-transform: uppercase;
+      border-bottom: 2px solid black;
+      padding: 0.5rem;
+      width: 15rem;
+      // border: 2px solid red;
+      color: black;
+    }
+    > p {
+      padding: 5rem;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+      line-height: 170%;
+      font: italic 100 1.2rem $text;
+    }
+  }
+}
+
+.home4 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  > div {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 200px 0 0 200px;
+    width: 70%;
+    height: 70vh;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    > h1 {
+      color: yellow;
+      border-bottom: 2px solid yellow;
+      width: 140px;
+      padding: 0.5rem;
+      text-transform: uppercase;
+    }
+    > article {
+      display: flex;
+      margin: 2rem 0;
+        flex-wrap: wrap;
+        justify-content: center;
+      > div {
+        animation: imgUp 0.7s linear infinite alternate;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: yellow;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover{
+            filter: invert(1);
+        }
+        >svg{
+            font-size: 4rem;
+        }
+        >p{
+            font: 900 1.2rem $text;
+        }
+      }
+    }
+  }
+}

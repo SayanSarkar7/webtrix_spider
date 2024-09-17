@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../assets/MBA Chai Wala.mp4";
+import video from "../assets/webtrix.mp4";
 
 const IntroVide = () => {
   return (

@@ -13,7 +13,7 @@ footer {
   grid-template-columns: 4fr 1fr;
 
   h1 {
-    color: $pink;
+    color: black;
     font: italic 800 62px $text;
   }
 
@@ -23,7 +23,7 @@ footer {
     align-items: flex-end;
 
     a {
-      color: $pink;
+      color: black;
       text-transform: uppercase;
       font: 500 14px $text;
       text-decoration: none;
@@ -34,7 +34,7 @@ footer {
   }
 
   div {
-    color: $pink;
+    color: black;
     display: flex;
     flex-direction: column;
     padding: 4rem;
@@ -51,7 +51,7 @@ footer {
     a {
       text-decoration: none;
       font-family: $text;
-      color: $pink;
+      color: black;
     }
   }
 
